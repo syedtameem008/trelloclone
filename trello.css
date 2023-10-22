@@ -1,0 +1,167 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+body{
+	background:#0079bf;
+}
+.container{
+background:#005c91;
+color:white;
+}
+.box1{
+display:flex;
+justify-content:flex-start;
+align-items:center;
+flex-wrap:wrap;
+gap:5px;
+padding:10px;
+float:left;
+}
+.box1 h1{
+	font-size:20px;
+	font-family:"arial";
+	font-weight:bolder;
+	padding:2px;
+	margin-right:20px;
+}
+.b1{
+	display:inline-flex;
+	line-height:24px;
+	font-weight:bolder;
+	gap:5px;
+	padding:2px;
+	width:100px;
+	align-items:center;
+	justify-content:center;
+	margin-right:2px;
+	background:transparent;
+	color:white;
+	outline:none;
+	border:none;
+}
+.b1:hover{
+	background: rgba(255, 255, 255, 0.2);
+}
+.box2{
+	display:flex;
+justify-content:flex-end;
+align-items:center;
+flex-wrap:wrap;
+gap:5px;
+padding:10px;
+}
+.b3{
+	display:inline-flex;
+	line-height:24px;
+	font-weight:bolder;
+	gap:5px;
+	padding:2px;
+	width:100px;
+	align-items:center;
+	justify-content:center;
+	color:white;
+	background:transparent;
+	border:0;
+}
+.b3:hover{
+background: rgba(255, 255, 255, 0.2);
+}
+	
+.round{
+	background:#44546f;
+	border-radius:50%;
+	font-size:fit-content;
+	padding:5px;
+}
+@media only screen and (max-width: 780px){
+	.b1,.b3{
+		width:fit-content;
+	}
+	.box1 h1{
+		font-size:12px;
+		margin-right:0px;
+	}
+	.box2{
+		flex-wrap:wrap;
+	}
+	.board1{
+		display:none;
+	}
+	svg{
+		width:12px;
+		height:12px;
+	}
+		
+}
+.div1{
+	width:25%;
+	height:auto;
+	float:left;
+	margin:10px;
+	padding:5px;
+	background:#f1f2f4;
+	border-radius:10px;
+}
+.div2{
+	width:25%;
+	height:auto;
+	float:left;
+	margin:10px;
+	padding:5px;
+	background:#f1f2f4;
+	border-radius:10px;
+}
+.div3{
+	width:25%;
+	height:auto;
+	float:left;
+	margin:10px;
+	padding:5px;
+	background:#f1f2f4;
+	border-radius:10px;
+
+}
+.div1 p,.div2 p,.div3 p{
+	font-family:arial;
+	color:#172b4d;
+	font-weight:bolder;
+}
+#todo-list, #Doing-list,#Done-list {
+            list-style-type: none;
+            padding: 0px;
+        }
+#todo-list li, #Doing-list li,#Done-list li{
+	background:#ffff;
+	font-family:arial;
+	margin:10px;
+	padding:10px;
+	font-size:15px;
+	border:2px solid white;
+	border-radius:10px;
+	color:#172b4d;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#todo-list li:hover{
+	border:2px solid black;
+}
+#Doing-list li:hover{
+	border:2px solid black;
+}
+#Done-list li:hover{
+		border:2px solid black;
+}
+button{
+	background:#0079bf;
+	color:white;
+}
+@media only screen and (max-width:780px){
+	.div1, .div2,.div3{
+  display:block;
+  width:96%;
+  margin:10px;
+  border-radius:10px;
+}
+}
+	

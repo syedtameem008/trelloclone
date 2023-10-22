@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, intital-scale=1"  />
+<meta http-equiv="X-UA-compatible" content="IE=edge"/>
+<title>FE-ASSIGNMENT | Trello</title>
+<link rel="icon" href="./assets/trello.png" type="image/icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="trello.css" />
+<script src="Lists.js"></script>
+</head>
+<body>
+<!--menu-->
+<div class="container">
+<div style="overflow:auto;">
+<div class="box1">
+<h1>FE-ASSIGNMENT</h1>
+<!--globe-->
+<i class="fa fa-globe" style="font-size:24px; padding:2px; margin-right:2px; "></i>
+<!--end-->
+<!--view board-->
+<button class="b1">
+<svg width="12" height="12" role="presentation" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+ clip-rule="evenodd" d="M2 7V15C2 16.1046 2.89543 17 4 17H6C7.10457 17 8 16.1046 8 15V7C8 5.89543 7.10457 5 6 5H4C2.89543 5 2 5.89543 2 7ZM4 7V15H6V7L4 7Z"
+ fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9 7V13C9 14.1046 9.89543 15 11 15H13C14.1046 15 15 14.1046 15 13V7C15 5.89543
+ 14.1046 5 13 5H11C9.89543 5 9 5.89543 9 7ZM11 7V13H13V7L11 7Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 17V7C16 5.89543
+ 16.8954 5 18 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H18C16.8954 19 16 18.1046 16 17ZM18 17V7L20 7V17H18Z" fill="currentColor"></path></svg>
+<span class="board">Board</span>
+</button>
+<!--end-->
+<!--angle down-->
+<button class="b2" style="background:transparent; border:0;">
+<i class="fa fa-angle-down" style="font-size:24px; padding:2px; color:white; "></i>
+</button>
+<!--end-->
+</div>
+<div class="box2">
+<!--filters-->
+<button class="b3" >
+<svg width="12" height="12" role="presentation" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.61799 6C3.87461 6 3.39111 6.78231 3.72356 7.44721L3.99996 8H20L20.2763 7.44721C20.6088 6.78231 20.1253
+ 6 19.3819 6H4.61799ZM10.8618 17.7236C10.9465 17.893 11.1196 18 11.309 18H12.6909C12.8803 18 13.0535 17.893 13.1382 17.7236L14 16H9.99996L10.8618 17.7236ZM17
+ 13H6.99996L5.99996 11H18L17 13Z" fill="currentColor"></path></svg>
+<span class="board1">Filters</span>
+</button>
+<!--end-->
+<!--id-->
+<div class="round">AE</div>
+<!--end-->
+<!--dots-->
+<svg width="24" height="24" role="presentation" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" 
+clip-rule="evenodd" d="M5 14C6.10457 14 7 13.1046 7 12C7 10.8954 6.10457 10 5 10C3.89543 10 3 10.8954 3 12C3 13.1046 3.89543 14 5 14ZM12 14C13.1046 14
+ 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14ZM21 12C21 13.1046 20.1046 14 19 14C17.8954 14 17 
+ 13.1046 17 12C17 10.8954 17.8954 10 19 10C20.1046 10 21 10.8954 21 12Z" fill="currentColor"></path></svg>
+ <!--end-->
+ </div></div></div>
+ <!--end menu-->
+ <!--to-do-->
+  <!-- To-Do List 1 -->
+    <div class="div1">
+        <p>To Do</p>
+		 <ul id="ToDo-list"></ul>
+        <input type="text" id="ToDo-task" placeholder="Add a new task">
+        <button onclick="addTask('ToDo-task', 'ToDo-list')">Add Task</button>
+    </div>
+
+    <!-- To-Do List 2 -->
+    <div class="div2">
+        <p>Doing</p>
+		 <ul id="Doing-list"></ul>
+        <input type="text" id="Doing-task" placeholder="Add a new task">
+        <button onclick="addTask('Doing-task', 'Doing-list')">Add Task</button>
+    </div>
+
+    <!-- To-Do List 3 -->
+    <div class="div3">
+        <p>Done</p>
+		<ul id="Done-list"></ul>
+        <input type="text" id="Done-task" placeholder="Add a new task">
+        <button onclick="addTask('Done-task', 'Done-list')">Add Task</button>
+    </div>
+</body>
+</html>
+
+
+
+
+
+ 
+ 
+ 
+
